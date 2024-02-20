@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busbee</title>
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        .font-raleway {
+            font-family: "Raleway", sans-serif;
+        }
+
+        .font-inter {
+            font-family: "Inter", sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="px-5 lg:px-24">
+        <nav class="font-raleway">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost p-0 lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Destination</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-4xl font-extrabold p-0">Busbee</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Destination</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a class="btn bg-[#1DD1001A] border border-[#1DD10066]"><span
+                            class="text-xl font-bold text-[#1DD100]">Bus</span><img src="images/bus-icon.png"></a>
+                </div>
+            </div>
+        </nav>
+        <div
+            class="bg-[url(images/banner.png)] bg-no-repeat bg-center flex flex-col justify-center items-center gap-5 font-raleway text-center h-[550px]">
+            <h1 class="text-6xl font-extrabold text-white">End-to-End Travel with</h1>
+            <h1 class="text-6xl font-extrabold text-[#1DD100]">Busbee</h1>
+            <p class="font-inter text-white">
+                Your smooth ride starts here. Book bus tickets with ease, explore routes, and hit the road in just a few
+                clicks.
+            </p>
+            <button class="btn border-none bg-[#1DD100] font-bold">Buy Tickets</button>
+        </div>
+    </header>
+    <main>
+        <!-- Offer -->
+        <section class="mt-24 text-center">
+            <h1 class="font-raleway text-4xl font-bold text-black">Best offers for you</h1>
+            <div class="mt-12 flex justify-center gap-6">
+                <div class="bg-[#FFBF0F] flex justify-center items-center gap-32 p-14">
+                    <div class="font-inter">
+                        <h1>15% OFF</h1>
+                        <h2>on your next purchase</h2>
+                        <h3>use by January 2024</h3>
+                    </div>
+                    <div class="font-raleway">
+                        <h1>NEW15</h1>
+                        <h2>Coupon Code</h2>
+                    </div>
+                </div>
+                <div class="bg-[#F78C9C] flex justify-center items-center gap-32 p-14">
+                    <div class="font-inter">
+                        <h1>20% OFF</h1>
+                        <h2>on your next purchase</h2>
+                        <h3>use by January 2024</h3>
+                    </div>
+                    <div class="font-raleway">
+                        <h1>Couple 20</h1>
+                        <h2>Coupon Code</h2>
+                    </div>
+                </div>
+            </div>
+            <button class="btn mt-16 border-none bg-[#1DD100] font-bold">See All Offers</button>
+        </section>
+        <!-- Counter -->
+        <section class="mt-24 border-t-2 border-[#1DD100] rounded-t-[88px] bg-[#F7F8F8] p-24">
+            <div class="text-center">
+                <h1 class="font-raleway text-4xl font-bold">Busbee</h1>
+                <p class="font-inter text-xl font-normal">
+                    Your smooth ride starts here. Book bus tickets with ease, explore routes, and hit the road in just a
+                    few clicks.
+                </p>
+            </div>
+            <div class="mt-12 flex justify-between items-center gap-32 p-8 bg-white rounded-3xl">
+                <div class="flex-1 flex flex-col gap-5">
+                    <div class="flex-1 flex justify-between items-center">
+                        <div class="flex-1 flex gap-4">
+                            <img src="images/bus-logo.png">
+                            <div>
+                                <span class="font-raleway text-3xl font-bold">
+                                    Greenline Paribahan
+                                </span><br>
+                                <span class="font-inter text-xl font-normal">
+                                    Coach-009-WEB ! AC_Business
+                                </span>
+                            </div>
+                        </div>
+                        <div>
+                            <button class="btn no-animation bg-[#1DD10026]"><img src="images/seat-green.png">
+                                <span id="seat-left">8</span> Seats left
+                            </button>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-6 p-8 bg-[#F7F8F8] rounded-3xl">
+                        <div class="flex justify-between"><span>Route</span><span>Dhaka-Sylhet</span></div>
+                        <hr>
+                        <div class="flex justify-between"><span>Departure Time</span><span>9:00 PM</span></div>
+                        <hr>
+                        <div class="flex justify-between">
+                            <button class="btn no-animation">Boarding Point - Laxmipur</button>
+                            <button class="btn no-animation">Dropping Point - Bogura</button>
+                            <button class="btn no-animation">Est. Time - 11 Hour</button>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="font-raleway">
+                        <img src="images/fare.png">
+                        <h1>550 Taka</h1>
+                        <h2>Per Seat</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- seat book -->
+        <section class="flex gap-16 p-24">
+            <!-- seat -->
+            <div class="grid gap-7 w-3/5">
+                <h1>Select your seat</h1>
+                <hr>
+                <div class="flex justify-between">
+                    <button class="btn no-animation"><img src="images/seat-gray.png">Available</button>
+                    <button class="btn no-animation"><img src="images/seat-green-filled.png">Selected</button>
+                </div>
+                <div class="flex justify-end">
+                    <button class="btn no-animation px-10 py-3">
+                        <img src="images/tabler-icon-steering-wheel.png">
+                    </button>
+                </div>
+                <div class="grid gap-6">
+                    <div class="flex justify-between">
+                        <button>A</button>
+                        <button id="A1" class="seat btn w-28">A1</button>
+                        <button id="A2" class="seat btn w-28">A2</button>
+                        <button id="A3" class="seat btn w-28">A3</button>
+                        <button id="A4" class="seat btn w-28">A4</button>
+                    </div>
+                    <div class="flex justify-between">
+                        <button>B</button>
+                        <button id="B1" class="seat btn w-28">B1</button>
+                        <button id="B2" class="seat btn w-28">B2</button>
+                        <button id="B3" class="seat btn w-28">B3</button>
+                        <button id="B4" class="seat btn w-28">B4</button>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-1">
+                <h1>Confirm your seat</h1>
+                <!-- table and coupon -->
+                <div class="grid gap-3">
+                    <table class="table">
+                        <!-- head -->
+                        <thead>
+                            <tr>
+                                <th>Seat <button id="seat-selected" class="bg-[#1DD100] px-2 py-1 rounded-full">0</button></th>
+                                <th>Class</th>
+                                <th>Element</th>
+                            </tr>
+                        </thead>
+                        <tbody id="seat-booked">
+                            <tr id="seat-row-1" class="seat-row"></tr>
+                            <tr id="seat-row-2" class="seat-row"></tr>
+                            <tr id="seat-row-3" class="seat-row"></tr>
+                            <tr id="seat-row-4" class="seat-row"></tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td>Total Price</td>
+                                <td></td>
+                                <td>BDT <span id="total-price">0</span></td>
+                            </tr>
+                            <tr class="hidden">
+                                <td>Discount</td>
+                                <td></td>
+                                <td>BDT <span>0</span></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <div class="flex gap-3">
+                        <label id="coupon-input" class="input input-bordered flex items-center gap-2">
+                            <input type="text" class="grow" placeholder="Have any coupon?" />
+                        </label>
+                        <button class="btn bg-[#1DD100]">Apply</button>
+                    </div>
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <th>Grand total</th>
+                                <th></th>
+                                <th>BDT <span id="grand-total">0</span></th>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- Modal -->
+                    <button class="btn bg-[#1DD100]" onclick="my_modal_5.showModal()">Next</button>
+                    <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                        <div class="modal-box">
+                            <h3><img src="images/success.png"></h3>
+                            <p class="py-4">Thank you for Booking Our Bus Seats.</p>
+                            <div class="modal-action">
+                                <form method="dialog">
+                                    <button class="btn bg-[#1DD100]">Continue</button>
+                                </form>
+                            </div>
+                        </div>
+                    </dialog>
+                </div>
+            </div>
+        </section>
+        <script src="scripts/busbee.js"></script>
+        <script src="scripts/utility.js"></script>
+    </main>
+</body>
+
+</html>
