@@ -13,9 +13,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 if (count < 4) {
                     count++;
                     left--;
-                    console.log("Selected seat count:", count);
-                    console.log("Seats left:", left);
                     setInnerText("seat-selected", count);
+                    setInnerText("seat-left", left);
 
                     seat.classList.add("bg-[#1DD100]");
                     seat.classList.add("clicked");
