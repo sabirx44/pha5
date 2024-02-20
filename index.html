@@ -55,27 +55,27 @@
                     </ul>
                 </div>
                 <div class="navbar-end">
-                    <a class="btn bg-[#1DD1001A] border border-[#1DD10066]"><span
-                            class="text-xl font-bold text-[#1DD100]">Bus</span><img src="images/bus-icon.png"></a>
+                    <a class="btn bg-[#1DD1001A] border border-[#1DD10066]">
+                        <span class="text-xl font-bold text-[#1DD100]">Bus</span><img src="images/bus-icon.png"></a>
                 </div>
             </div>
         </nav>
         <div
-            class="bg-[url(images/banner.png)] bg-no-repeat bg-center flex flex-col justify-center items-center gap-5 font-raleway text-center h-[550px]">
+            class="mt-6 bg-[url(images/banner.png)] bg-no-repeat bg-center flex flex-col justify-center items-center gap-5 font-raleway text-center h-[550px]">
             <h1 class="text-6xl font-extrabold text-white">End-to-End Travel with</h1>
             <h1 class="text-6xl font-extrabold text-[#1DD100]">Busbee</h1>
             <p class="font-inter text-white">
                 Your smooth ride starts here. Book bus tickets with ease, explore routes, and hit the road in just a few
                 clicks.
             </p>
-            <button class="btn border-none bg-[#1DD100] font-bold">Buy Tickets</button>
+            <a href="#ticket-counter"><button class="btn border-none bg-[#1DD100] font-bold">Buy Tickets</button></a>
         </div>
     </header>
     <main>
         <!-- Offer -->
         <section class="mt-24 text-center">
             <h1 class="font-raleway text-4xl font-bold text-black">Best offers for you</h1>
-            <div class="mt-12 flex justify-center gap-6">
+            <div class="mt-12 flex flex-col lg:flex-row justify-center gap-6">
                 <div class="bg-[#FFBF0F] flex justify-center items-center gap-32 p-14">
                     <div class="font-inter">
                         <h1>15% OFF</h1>
@@ -102,7 +102,7 @@
             <button class="btn mt-16 border-none bg-[#1DD100] font-bold">See All Offers</button>
         </section>
         <!-- Counter -->
-        <section class="mt-24 border-t-2 border-[#1DD100] rounded-t-[88px] bg-[#F7F8F8] p-24">
+        <section id="ticket-counter" class="mt-24 border-t-2 border-[#1DD100] rounded-t-[88px] bg-[#F7F8F8] p-5 lg:p-24">
             <div class="text-center">
                 <h1 class="font-raleway text-4xl font-bold">Busbee</h1>
                 <p class="font-inter text-xl font-normal">
@@ -110,10 +110,10 @@
                     few clicks.
                 </p>
             </div>
-            <div class="mt-12 flex justify-between items-center gap-32 p-8 bg-white rounded-3xl">
+            <div class="mt-12 flex flex-col lg:flex-row justify-between items-center gap-32 p-8 bg-white rounded-3xl">
                 <div class="flex-1 flex flex-col gap-5">
-                    <div class="flex-1 flex justify-between items-center">
-                        <div class="flex-1 flex gap-4">
+                    <div class="flex-1 flex flex-col lg:flex-row justify-between items-center">
+                        <div class="flex-1 flex flex-col lg:flex-row gap-4">
                             <img src="images/bus-logo.png">
                             <div>
                                 <span class="font-raleway text-3xl font-bold">
@@ -135,7 +135,7 @@
                         <hr>
                         <div class="flex justify-between"><span>Departure Time</span><span>9:00 PM</span></div>
                         <hr>
-                        <div class="flex justify-between">
+                        <div class="flex flex-col lg:flex-row justify-between">
                             <button class="btn no-animation">Boarding Point - Laxmipur</button>
                             <button class="btn no-animation">Dropping Point - Bogura</button>
                             <button class="btn no-animation">Est. Time - 11 Hour</button>
@@ -150,9 +150,8 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- seat book -->
-        <section class="flex gap-16 p-24">
+            <!-- seat book -->
+        <div class="mt-6 flex flex-col lg:flex-row gap-16 p-8 bg-white rounded-3xl">
             <!-- seat -->
             <div class="grid gap-7 w-3/5">
                 <h1>Select your seat</h1>
@@ -167,14 +166,14 @@
                     </button>
                 </div>
                 <div class="grid gap-6">
-                    <div class="flex justify-between">
+                    <div class="flex flex-col lg:flex-row justify-between">
                         <button>A</button>
                         <button id="A1" class="seat btn w-28">A1</button>
                         <button id="A2" class="seat btn w-28">A2</button>
                         <button id="A3" class="seat btn w-28">A3</button>
                         <button id="A4" class="seat btn w-28">A4</button>
                     </div>
-                    <div class="flex justify-between">
+                    <div class="flex flex-col lg:flex-row justify-between">
                         <button>B</button>
                         <button id="B1" class="seat btn w-28">B1</button>
                         <button id="B2" class="seat btn w-28">B2</button>
@@ -183,15 +182,17 @@
                     </div>
                 </div>
             </div>
-            <div class="flex-1">
+            <div class="flex-1 grid gap-7">
                 <h1>Confirm your seat</h1>
+                <hr>
                 <!-- table and coupon -->
                 <div class="grid gap-3">
                     <table class="table">
                         <!-- head -->
                         <thead>
                             <tr>
-                                <th>Seat <button id="seat-selected" class="bg-[#1DD100] px-2 py-1 rounded-full">0</button></th>
+                                <th>Seat <button id="seat-selected"
+                                        class="bg-[#1DD100] px-2 py-1 rounded-full">0</button></th>
                                 <th>Class</th>
                                 <th>Element</th>
                             </tr>
@@ -208,18 +209,18 @@
                                 <td></td>
                                 <td>BDT <span id="total-price">0</span></td>
                             </tr>
-                            <tr class="hidden">
+                            <tr>
                                 <td>Discount</td>
                                 <td></td>
-                                <td>BDT <span>0</span></td>
+                                <td>BDT <span id="discount">0</span></td>
                             </tr>
                         </tfoot>
                     </table>
-                    <div class="flex gap-3">
+                    <div class="flex flex-col lg:flex-row gap-3">
                         <label id="coupon-input" class="input input-bordered flex items-center gap-2">
                             <input type="text" class="grow" placeholder="Have any coupon?" />
                         </label>
-                        <button class="btn bg-[#1DD100]">Apply</button>
+                        <button id="coupon-apply" class="btn bg-[#1DD100]" disabled>Apply</button>
                     </div>
                     <table class="table">
                         <tbody>
@@ -238,13 +239,14 @@
                             <p class="py-4">Thank you for Booking Our Bus Seats.</p>
                             <div class="modal-action">
                                 <form method="dialog">
-                                    <button class="btn bg-[#1DD100]">Continue</button>
+                                    <button id="continue" class="btn bg-[#1DD100]">Continue</button>
                                 </form>
                             </div>
                         </div>
                     </dialog>
                 </div>
             </div>
+        </div>
         </section>
         <script src="scripts/busbee.js"></script>
         <script src="scripts/utility.js"></script>
